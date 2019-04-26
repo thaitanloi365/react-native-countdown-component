@@ -9,7 +9,7 @@ declare module "react-native-countdown-component" {
     digitStyle?: StyleProp<ViewStyle>;
     digitTxtStyle?: StyleProp<TextStyle>;
     timeLabelStyle?: StyleProp<TextStyle>;
-    separatorStyle?: StyleProp<ViewStyle>;
+    separatorStyle?: StyleProp<TextStyle>;
     timeToShow?: Array<string>;
     showSeparator?: boolean;
     size?: number;
