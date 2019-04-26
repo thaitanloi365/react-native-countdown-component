@@ -3,6 +3,7 @@ declare module "react-native-countdown-component" {
   import { StyleProp, ViewStyle, TextStyle } from "react-native";
   interface CountDownProps {
     until: number;
+    running?: boolean;
     style?: StyleProp<ViewStyle>;
     digitWidthRatio?: number;
     digitHeightRatio?: number;
@@ -16,6 +17,7 @@ declare module "react-native-countdown-component" {
     onChange?: (seconds: number) => void;
     onPress?: () => void;
     onFinish?: () => void;
+    timeLabels?: { [key: string]: string | null };
   }
   export default class CountDown extends React.Component<CountDownProps, any> {}
 }
