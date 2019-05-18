@@ -149,9 +149,9 @@ class CountDown extends React.Component {
   };
 
   renderSeparator = () => {
-    const { separatorStyle, size } = this.props;
+    const { separatorStyle, separatorContainerStyle, size } = this.props;
     return (
-      <View style={{ justifyContent: "center", alignItems: "center" }}>
+      <View style={[{ justifyContent: "center", alignItems: "center" }, separatorContainerStyle]}>
         <Text style={[styles.separatorTxt, { fontSize: size * 1.2 }, separatorStyle]}>{":"}</Text>
       </View>
     );
